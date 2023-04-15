@@ -458,6 +458,14 @@ dev.off()
 		acf(InterestRate)
 		pacf(InterestRate)
 		 
+# Test KPSS
+kpss.test(InterestRate)
+# Le résultat du test indique que la série temporelle est stationnaire (p-value < 0.05)
+
+# Test ADF
+adf.test(InterestRate)
+# Le résultat du test indique que la série temporelle n'est pas stationnaire (p-value > 0.05)
+
 
 		X = InterestRate 
 		 
